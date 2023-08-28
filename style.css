@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+  background-color: rgb(220, 220, 220);
+  background: rgb(211, 211, 211);
+  color: black;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.desc {
+  font-size: 1.65rem;
+  margin-top: 1rem;
+  font-weight: 530;
+  color: var(--text-color);
+  color: rgb(105, 105, 105);
+
+}
+
+.container {
+  max-width: 1500px;
+  width: 90%;
+  padding: 5rem;
+  display: grid;
+  margin: 0 auto;
+  /* make it into center */
+  background: rgb(211, 211, 211);
+  background-color: rgb(220, 220, 220);
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+
+
+}
+
+@media only screen and (max-width) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 7rem;
+  }
+}
+
+.profile {
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
+}
+
+.profile-contianer {
+  display: flex;
+  /* create one row in two columns */
+  gap: 2rem;
+
+}
+
+.prof-img img {
+  border-radius: 50%;
+}
+
+.first-name {
+
+  color: rgb(178, 34, 34);
+  font-weight: 100px;
+  font-size: clamp(3rem, 8vm, 4rem);
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  text-shadow: 1px 1px rgb(105, 105, 105);
+
+}
+
+.second-name {
+  color: black;
+  font-weight: 650px;
+  font-size: clamp(3rem, 8vm, 4rem);
+  font-size: 87px;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgb(178, 34, 34);
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 430;
+  font-size: 2rem;
+  display: block;
+}
+
+.desc {
+  padding: 10px 10px 10px 0px;
+
+}
+
+@media only screen and (max-midth:750px) {
+  .profile-contianer {
+    flex-direction: column;
+  }
+}
+
+.skill-title {
+  margin: 15px 15px 15px 0px;
+  text-transform: uppercase;
+  color: rgb(178, 34, 34);
+  font-weight: 100px;
+  font-size: clamp(3rem, 8vm, 4rem);
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  text-shadow: 1.5px 1.5px rgb(105, 105, 105);
+
+}
+
+.lang_list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 10px 10px 10px 0px;
+  line-height: 2;
+
+
+
+}
+
+.ref-name {
+  padding: 10px 10px 10px 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 150px;
+}
+
+.date,
+.degree,
+.item-pretitle {
+  padding: 5px 5px 5px 0px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.item-pretitle {
+  color: rgb(105, 105, 105);
+}
+
+.exp {
+  float: right;
+  margin-top: -18px;
+}
+
+.interest-items {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.Awards,
+.cert {
+  margin-top: -17px;
+}
+
+.interest {
+  margin-top: 8px;
+}
+
+.interest-item {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+}
+
+.interest-item svg {
+  width: 3rem;
+}
+
+.interest-item:hover {
+  color: rgb(178, 34, 34);
+}
+
+hr {
+  width: 65%;
+  margin: 15px 15px 15px 100px;
+}
+
+.social-info {
+  margin-top: 2rem;
+}
+
+.social-item {
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: flex;
+  color: rgb(105, 105, 105);
+}
+
+
+
+.social-item svg {
+  padding-right: 5px;
+  width: 5rem;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+
+
+}
+
+.social-item:hover {
+  color: rgb(178, 34, 34);
+}
+
+.social {
+  float: right;
+  margin-right: 300px;
+  margin-top: -15px;
+
+}
